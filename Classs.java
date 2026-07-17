@@ -1,10 +1,8 @@
  class Calculator
  {
-    public int add()
+    public int add(int a, int b)
     {
-        int a; 
-        System.out.println("in add");
-        return 0;
+        return a+b;
     }
  }
  
@@ -14,9 +12,8 @@
         int num1 =4;
         int num2 =5;
         Calculator calc = new Calculator();
-        int result= calc.add(n1:4,n2:5);                
-        //int result = num1 +num2;
-        
+        int result= calc.add(num1,num2);                
+        System.out.println("Addition of "+num1+" and "+num2+" is: "+result);        
     }
     
 }
