@@ -5,7 +5,7 @@ import java.util.Optional;
 public class Reduce {
     public static void main(String[] args) {
         List<Integer> num = Arrays.asList(4, 7, 3, 2, 6);
-b
+
         int sum = num.stream().reduce(0, (c, e) -> c + e);
         System.out.println("sum " + sum);
 

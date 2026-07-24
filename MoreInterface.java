@@ -1,5 +1,3 @@
-import java.security.cert.X509Extension;
-
 interface A {
     int age = 44;
     String area = "Mumbai";

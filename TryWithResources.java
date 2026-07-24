@@ -7,7 +7,7 @@ public class TryWithResources {
         } catch (Exception e) {
             System.out.println("Wrong");
         } finally {
-            System.out.println("byye");
+            System.out.println("bye");
         }
     }
 }

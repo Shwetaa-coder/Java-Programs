@@ -22,18 +22,19 @@ class Dog extends Animal {
 public class UpcastingAndDowncasting {
 
     public static void main(String[] args) {
-        /*UPCASTING
-        Child object is stored in a Parent reference.
-        This happens automatically (implicit casting).
-        */
-        Animal animal = new Dog();   // Upcasting
+        /*
+         * UPCASTING
+         * Child object is stored in a Parent reference.
+         * This happens automatically (implicit casting).
+         */
+        Animal animal = new Dog(); // Upcasting
         System.out.println("----- Upcasting -----");
 
         // Parent method can be called.
         animal.eat();
 
         // Child-specific methods cannot be accessed.
-        // animal.bark();   // Compile-time Error
+        // animal.bark(); // Compile-time Error
 
         /*
          * Important:
@@ -52,10 +53,10 @@ public class UpcastingAndDowncasting {
         // Convert Parent reference back to Child reference.
         // Explicit casting is required.
 
-        Dog dog = (Dog) animal;   // Downcasting
+        Dog dog = (Dog) animal; // Downcasting
 
-        dog.eat();    // Overridden method
-        dog.bark();   // Child-specific method
+        dog.eat(); // Overridden method
+        dog.bark(); // Child-specific method
 
         /*
          * Important:
@@ -70,6 +71,7 @@ public class UpcastingAndDowncasting {
         System.out.println("\n----- Unsafe Downcasting -----");
 
         Animal a = new Animal();
+        a.eat();
 
         // Dog d = (Dog) a; // Runtime Error
         // ClassCastException

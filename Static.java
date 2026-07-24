@@ -1,4 +1,4 @@
-class Studentb {
+class Student {
     // instance variables
     String name;
     int rollno;
@@ -16,11 +16,10 @@ class Studentb {
     }
 
     // ----Constructor----
-    Student(String name, int rollno)
-    {
-        this.name=name;
-        this.rollno=rollno;
-        count++; //Incrementing the count of students
+    Student(String name, int rollno) {
+        this.name = name;
+        this.rollno = rollno;
+        count++; // Incrementing the count of students
     }
 
     // instance method to display student details
